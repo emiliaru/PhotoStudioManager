@@ -1,0 +1,6 @@
+@PhotoStudioManager.API_HostAddress = http://localhost:5031
+
+GET {{PhotoStudioManager.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
