@@ -1,44 +1,38 @@
 # Photo Studio Manager
 
-System do zarządzania studiem fotograficznym i sesjami zdjęciowymi.
+Nowoczesna aplikacja do zarządzania studiem fotograficznym, zbudowana w React/TypeScript (frontend) i .NET 8 (backend). System umożliwia zarządzanie sesjami fotograficznymi, klientami i harmonogramem pracy.
 
 ## Technologie
-- Backend:
-  - .NET 8
-  - ASP.NET Core Web API
-  - Entity Framework Core
-  - SQL Server
-  - Clean Architecture
-  - JWT Authentication
-- Frontend:
-  - React
-  - TypeScript
-  - Material-UI
-  - React Query
-  - React Router
 
-## Funkcjonalności
-- Zarządzanie sesjami fotograficznymi
-- Zarządzanie klientami
-- System rezerwacji terminów
-- Zarządzanie portfolio
-- Panel administracyjny
-- System powiadomień
+### Backend
+- .NET 8
+- ASP.NET Core Web API
+- Entity Framework Core
+- SQL Server
+- Clean Architecture
 
-## Struktura Projektu
-- `PhotoStudioManager.API` - Warstwa API
-- `PhotoStudioManager.Core` - Warstwa domeny (encje, interfejsy)
-- `PhotoStudioManager.Application` - Warstwa aplikacji (serwisy, DTOs)
-- `PhotoStudioManager.Infrastructure` - Warstwa infrastruktury (baza danych, zewnętrzne serwisy)
+### Frontend
+- React
+- TypeScript
+- Material-UI
+- React Query
+- React Router
 
-## Jak uruchomić
-1. Sklonuj repozytorium
-2. Zainstaluj .NET 8 SDK
-3. Zainstaluj SQL Server
-4. Uruchom migracje bazy danych
-5. Uruchom backend: `dotnet run --project PhotoStudioManager.API`
-6. Uruchom frontend (instrukcje w katalogu ClientApp)
+## Uruchomienie projektu
 
-## Development
-- Backend API URL: `https://localhost:7001`
-- Frontend URL: `http://localhost:3000`
+### Backend
+```bash
+cd PhotoStudioManager.API
+dotnet run
+```
+
+### Frontend
+```bash
+cd photo-studio-client
+npm install
+npm start
+```
+
+Aplikacja będzie dostępna pod adresami:
+- Backend: https://localhost:7001
+- Frontend: http://localhost:3000
